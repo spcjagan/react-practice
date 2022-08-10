@@ -16,9 +16,10 @@ code {
   text-decoration: none;
   margin: 25px 15px 25px 15px;
   padding: 5px;
-  background-color: aqua;
+  background-color: rgb(38, 230, 79);
   border-radius: 5px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: larger;
   font-weight: 500;
+  
 }
