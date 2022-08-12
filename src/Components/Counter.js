@@ -5,8 +5,12 @@ class Counter extends Component{
         this.state={
             counter:0
         }
+        this.counterincrement =this.counterincrement.bind(this);
+        this.counterdecrement = this.counterdecrement.bind(this);
     }
     counterincrement(){
+        console.log(this)
+        console.log("Button Clicked!")
         this.setState(
             {
                 counter:this.state.counter + 1 
@@ -15,6 +19,8 @@ class Counter extends Component{
     }
 
     counterdecrement(){
+        console.log(this)
+        console.log("Button Clicked!")
         this.setState({
             counter:this.state.counter - 1
         })
@@ -24,8 +30,8 @@ class Counter extends Component{
             <div>
                 <center> 
                  <h3>Count value is: {this.state.counter} </h3>
-                <button onClick={()=>this.counterincrement()}>Increment</button><br/>
-                <button onClick={()=>this.counterdecrement()}>Decrement</button>
+                <button onClick={this.counterincrement}>Increment</button><br/>
+                <button onClick={this.counterdecrement}>Decrement</button>
                 </center>
             </div>
         )
