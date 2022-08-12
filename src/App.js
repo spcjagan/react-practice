@@ -1,23 +1,15 @@
 import React from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import About from './About'
-import Dashboard from './Dashboard'
-import HomePage from './HomePage'
-import PageNotFound from './PageNotFound';
-
+import Profile from './Components/Profile'
+import Counter from './Components/Counter'
+import Resume from './Components/Resume'
+import FunctionEvent from './Components/FunctionEvent'
+import ClassEvent from './Components/ClassEvent'
 
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-       <Routes>
-        <Route path='/HomePage'        element={<HomePage />}/>
-        <Route path='/Dashboard'       element={<Dashboard />}/>
-        <Route path='/About'           element={<About />}/>
-        <Route path='*'                element={<PageNotFound/>}/> 
-       </Routes>
-      </BrowserRouter>
+      <Counter/>
     </div>
   )
 }
